@@ -1,4 +1,4 @@
-package com.ghamerinit
+package com.ghamer
 
 import android.app.Application
 import com.facebook.react.PackageList
