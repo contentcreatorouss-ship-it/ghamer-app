@@ -1,0 +1,62 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    './App.{js,jsx,ts,tsx}',
+    './src/**/*.{js,jsx,ts,tsx}',
+    './global.css',
+  ],
+  presets: [require('nativewind/preset')],
+  theme: {
+    extend: {
+      colors: {
+        primary: '#FF3A1A',
+        'primary-light': '#FF6B52',
+        'primary-dark': '#CC2E15',
+        secondary: '#000000',
+        'secondary-light': '#1A1A1A',
+        tertiary: '#FFDC24',
+        'tertiary-light': '#FFE85A',
+        'tertiary-dark': '#CCB01D',
+        surface: '#D9D9D6',
+        'surface-light': '#F0F0EE',
+        background: '#FFFFFF',
+        'text-primary': '#000000',
+        'text-secondary': '#949494',
+        'text-disabled': '#C4C4C4',
+        border: '#27272A',
+        white: '#FFFFFF',
+        black: '#000000',
+      },
+      spacing: {
+        1: '4px',
+        2: '8px',
+        '2.5': '10px',
+        3: '12px',
+        4: '16px',
+        5: '20px',
+        6: '24px',
+        7: '28px',
+        12: '48px',
+      },
+      borderRadius: {
+        DEFAULT: '16px',
+        lg: '24px',
+        pill: '56px',
+        full: '9999px',
+      },
+      fontFamily: {
+        'inter-regular': ['Inter-Regular'],
+        'inter-medium': ['Inter-Medium'],
+        'inter-semibold': ['Inter-SemiBold'],
+        'inter-bold': ['Inter-Bold'],
+        'inter-extrabold': ['Inter-ExtraBold'],
+      },
+      boxShadow: {
+        sm: '0 2px 4px rgba(0,0,0,0.05)',
+        md: '0 25px 50px -12px rgba(0,0,0,0.25)',
+        glow: '0 0 10px rgba(255,58,26,0.6)',
+      },
+    },
+  },
+  plugins: [],
+};
